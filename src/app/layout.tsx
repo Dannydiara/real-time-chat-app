@@ -6,7 +6,7 @@ import { SessionProvider } from "next-auth/react"; // ✅ Import this
 import { TRPCReactProvider } from "~/trpc/react";
 
 export const metadata: Metadata = {
-  title: "D-Chat App",
+  title: "DeChat App",
   description: "A real-time chat application built with Next.js and Socket.IO",
   icons: [{ rel: "icon", url: "/D.ico" }],
 };
