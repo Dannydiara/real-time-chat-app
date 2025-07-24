@@ -8,7 +8,7 @@ import { TRPCReactProvider } from "~/trpc/react";
 export const metadata: Metadata = {
   title: "DeChat App",
   description: "A real-time chat application built with Next.js and Socket.IO",
-  icons: [{ rel: "icon", url: "/D.ico" }],
+  icons: [{ rel: "icon", url: "/DCf.ico" }],
 };
 
 const geist = Geist({
@@ -20,9 +20,9 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en" className={`${geist.variable}`}>
+    <html lang="en" className={`dark ${geist.variable}`}>
       <body>
-        <SessionProvider> {/* ✅ Wrap your app here */}
+      <SessionProvider>
           <TRPCReactProvider>{children}</TRPCReactProvider>
         </SessionProvider>
       </body>
